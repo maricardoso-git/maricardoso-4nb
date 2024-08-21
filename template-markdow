@@ -1,0 +1,76 @@
+# Documentação de Requisitos do Projeto de Vendas de Bolos de Festa
+
+## 1. Introdução
+
+### 1.1. Objetivo
+Descrever os requisitos funcionais e não funcionais do sistema para venda de bolos de festa personalizados.
+
+### 1.2. Escopo
+Este documento detalha as funcionalidades necessárias para o desenvolvimento do sistema de vendas de bolos de festa, incluindo a personalização dos 
+pedidos e o gerenciamento de entregas.
+
+### 1.3. Definições, Siglas e Abreviações
+- **Sistema**: Plataforma de venda de bolos de festa.
+- **Usuário**: Cliente final que utilizará a plataforma para encomendar bolos.
+- **Admin**: Administrador do sistema responsável por gerenciar produtos, pedidos, e configurações.
+
+## 2. Requisitos Funcionais
+
+### 2.1. Gestão de Produtos
+- **RF01:** O sistema deve permitir ao Admin adicionar, editar e remover bolos do catálogo.
+- **RF02:** O sistema deve permitir ao Admin categorizar os bolos por tipo (aniversário, casamento, etc.) e sabor.
+- **RF03:** O sistema deve exibir aos usuários uma lista de bolos com filtro por tipo, sabor, tamanho, e preço.
+- **RF04:** O sistema deve permitir aos usuários visualizar detalhes de cada bolo, incluindo descrição, preço, imagens, e opções de personalização.
+
+### 2.2. Personalização de Bolos
+- **RF05:** O sistema deve permitir aos usuários escolher o sabor, recheio, cobertura, e tamanho do bolo.
+- **RF06:** O sistema deve permitir que os usuários adicionem mensagens personalizadas ou detalhes específicos sobre a decoração do bolo.
+- **RF07:** O sistema deve calcular o preço final com base nas opções de personalização selecionadas.
+
+### 2.3. Gestão de Usuários
+- **RF08:** O sistema deve permitir que os usuários se cadastrem com e-mail e senha.
+- **RF09:** O sistema deve permitir que os usuários façam login e visualizem seus pedidos anteriores.
+- **RF10:** O sistema deve permitir a recuperação de senha via e-mail.
+- **RF11:** O sistema deve permitir que os usuários atualizem seus dados cadastrais, como endereço e telefone.
+
+### 2.4. Carrinho de Compras e Pagamento
+- **RF12:** O sistema deve permitir que os usuários adicionem bolos personalizados ao carrinho de compras.
+- **RF13:** O sistema deve permitir que os usuários removam bolos do carrinho de compras.
+- **RF14:** O sistema deve permitir que os usuários realizem o checkout e escolham a data de entrega.
+- **RF15:** O sistema deve integrar-se com gateways de pagamento para processar transações com cartão de crédito, débito e PIX.
+
+### 2.5. Processamento e Entrega de Pedidos
+- **RF16:** O sistema deve gerar um número de pedido único para cada transação.
+- **RF17:** O sistema deve enviar um e-mail de confirmação ao usuário após a finalização da compra.
+- **RF18:** O sistema deve permitir que os usuários acompanhem o status do pedido até a entrega.
+- **RF19:** O sistema deve permitir ao Admin gerenciar o agendamento de entregas e o status de produção dos bolos.
+
+## 3. Requisitos Não Funcionais
+
+### 3.1. Desempenho
+- **RNF01:** O sistema deve ser capaz de processar até 500 pedidos simultâneos sem degradação de performance.
+- **RNF02:** O tempo de resposta para qualquer ação do usuário deve ser inferior a 3 segundos.
+
+### 3.2. Segurança
+- **RNF03:** O sistema deve criptografar todas as transações financeiras utilizando SSL/TLS.
+- **RNF04:** O sistema deve proteger os dados pessoais dos usuários, seguindo as melhores práticas de segurança da informação.
+
+### 3.3. Disponibilidade
+- **RNF05:** O sistema deve estar disponível 99,9% do tempo, com exceção de janelas de manutenção previamente programadas.
+
+### 3.4. Usabilidade
+- **RNF06:** A interface do sistema deve ser responsiva e fácil de usar, adaptando-se a dispositivos móveis, tablets e desktops.
+- **RNF07:** O sistema deve permitir que o usuário personalize o pedido de forma intuitiva, com feedback visual imediato.
+
+### 3.5. Manutenibilidade
+- **RNF08:** O sistema deve ser desenvolvido utilizando uma arquitetura modular para facilitar futuras manutenções e atualizações.
+- **RNF09:** O código do sistema deve ser documentado e seguir os padrões de codificação estabelecidos.
+
+### 3.6. Escalabilidade
+- **RNF10:** O sistema deve ser escalável para suportar um aumento no volume de pedidos durante períodos de alta demanda, como feriados e datas comemorativas.
+
+## 4. Aprovação
+Este documento foi revisado e aprovado pelas partes interessadas no projeto, incluindo o time de desenvolvimento e os stakeholders principais.
+
+**Data:** `dd/mm/aaaa`  
+**Aprovado por:** `Nome do responsável`

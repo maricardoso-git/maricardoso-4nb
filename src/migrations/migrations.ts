@@ -1,4 +1,4 @@
-import pool from '../config/database';
+import pool from "../config/database";
 
 const createUsersTable = async () => {
   const client = await pool.connect();
@@ -10,10 +10,10 @@ const createUsersTable = async () => {
         email VARCHAR(100) UNIQUE NOT NULL
       );
     `;
-    await client.query(queryText)
+    await client.query(queryText);
     console.log('Tabela "users" criada com sucesso!');
   } catch (err) {
-    console.error('Erro ao criar tabela:', err);
+    console.error("Erro ao criar tabela:", err);
   } finally {
     client.release();
   }

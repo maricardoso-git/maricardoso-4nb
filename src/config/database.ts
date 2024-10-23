@@ -1,7 +1,8 @@
-import { Pool } from "pg";
+import { Pool } from "pg"; 
 
 // Substitua pela sua string de conexão do Render.com
-const connectionString = "sua_string_de_conexao_do_render_aqui";
+const connectionString =
+  "postgresql://postgres:ofKwOppLuKmNLJSyHjbLBZOILrywAJJU@junction.proxy.rlwy.net:26635/railway";
 
 const pool = new Pool({
   connectionString,
